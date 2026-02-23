@@ -10,6 +10,7 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 # Load precomputed document embeddings
 embeddings = np.load("embeddings.npy")
 
+# Load documents
 with open("documents.txt", "r", encoding="utf-8") as f:
     documents = [line.strip() for line in f.readlines()]
 
@@ -28,8 +29,13 @@ st.title("📄 Information Retrieval using Document Embeddings")
 # Input query
 query = st.text_input("Enter your query:")
 
-# Top-K slider
-k = st.slider("Number of results to display", min_value=1, max_value=20, value=10)
+# Top-K slider 
+k = st.slider(
+    "Number of results to display",
+    min_value=1,
+    max_value=min(10, len(documents)),  
+    value=min(10, len(documents))
+)
 
 if st.button("Search") and query.strip():
     start_time = time.time()
@@ -40,6 +46,6 @@ if st.button("Search") and query.strip():
     end_time = time.time()
     st.write(f"⏱ Search completed in {end_time - start_time:.2f} seconds")
     
-    st.write(f"### Top {k} Relevant Documents:")
+    st.write(f"### Top {len(results)} Relevant Documents:")
     for i, (doc, score) in enumerate(results, start=1):
         st.write(f"{i}. **{doc}** (Score: {score:.4f})")
