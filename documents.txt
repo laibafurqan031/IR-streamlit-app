@@ -1,0 +1,10 @@
+Machine learning is a subset of artificial intelligence.
+Python is widely used for data science and AI.
+Information retrieval finds relevant documents.
+Deep learning uses neural networks.
+Streamlit helps build web applications easily.
+Natural language processing works with text data.
+Artificial intelligence is transforming industries.
+Data science involves statistics and programming.
+Neural networks are inspired by the human brain.
+Web development can be done using Python frameworks.
