@@ -8,3 +8,13 @@ Artificial intelligence is transforming industries.
 Data science involves statistics and programming.
 Neural networks are inspired by the human brain.
 Web development can be done using Python frameworks.
+Reinforcement learning is used in robotics.
+Pandas is a Python library for data manipulation.
+Scikit-learn simplifies machine learning tasks in Python.
+TensorFlow and PyTorch are popular deep learning frameworks.
+AI ethics ensures responsible use of artificial intelligence.
+Big data requires efficient storage and processing techniques.
+Cloud computing helps scale AI applications.
+Jupyter notebooks are widely used in data science projects.
+Text classification is a common NLP task.
+Python's matplotlib and seaborn are used for data visualization.
